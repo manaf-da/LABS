@@ -1,0 +1,31 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+header{
+    background-color: #B6D4CE;
+    text-align:center;
+    padding: 10px;
+}
+nav ul ,li {
+	display:flex;
+	justify-content: space-between;
+    gap: 10px;
+}
+ a {
+background-color: #B6D4CE;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border:1px solid black;
+  margin-top: 10px;
+ border-radius: 10px 0 10px 0;
+}
+
+hr {
+    border: 1px solid black;
+}
+footer  {
+   display: flex;
+   justify-content: center;
+}

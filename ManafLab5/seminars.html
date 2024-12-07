@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Seminars</title>
+    <!-- CO710 Statement of Authorship
+I Manaf Dawud , 000955625 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else.
+Date: 2024 -12-01
+General Description: Building webpage using table
+-->
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <link rel="stylesheet" type="text/css" href="travelstyles.css">
+    <link rel="stylesheet" type="text/css" href="printstyles.css" media="print">
+    <style>
+        .legend td {
+            border: 1px solid white;
+            background-color: white;
+        }
+
+        .legend {
+            margin: 30px 0 20px -40%;
+        }
+
+        .legend caption {
+            text-align: start;
+        }
+
+        .legendTable {
+            display: flex;
+        }
+
+        .colorBox {
+            height: 20px;
+            width: 10px;
+        }
+
+        .south {
+            background-color: #5993C7;
+        }
+
+        .north {
+            background-color: #B6D4CE;
+        }
+
+        .asia {
+            background-color: #A19372;
+        }
+
+        .africa {
+            background-color: #F4AF60;
+        }
+
+        .empty {
+            background-color: white;
+        }
+
+        .secondTable table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        .secondTable th,
+        td {
+            background-color: #72B57D;
+        }
+
+        .image {
+            background-image: url(images/dust.jpg);
+            text-align: center;
+        }
+
+        span {
+            margin-left: 67%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Travel Seminars </h1>
+        <h2>2024/2025</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">About Us</a> </li>
+            <li><a href="#">Countries</a> </li>
+            <li><a href="#">Seminars</a></li>
+            <li><a href="#">Photos</a> </li>
+            <li><a href="#">Travel</a> </li>
+        </ul>
+    </nav>
+    <section class="legend">
+        <table class="legenBox">
+            <caption>Legend:</caption>
+            <tr>
+                <td class="legendTable">
+                    <div class="colorBox north"></div>North America
+                    <div class="colorBox south"></div>South America
+                    <div class="colorBox asia"></div>Asia
+                    <div class="colorBox africa"></div>Africa
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="secondTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>7 am - 9 am</th>
+                    <th>9 am - 11 am</th>
+                    <th>11 am - 12 pm</th>
+                    <th>12 am - 2 pm</th>
+                    <th>2 pm - 4 pm</th>
+                    <th>6 pm - 8 pm</th>
+                    <th>8 pm - 10 pm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td class="north">North America</td>
+                    <td class="asia">Asia</td>
+                    <td class="africa" colspan="4">Africa</td>
+                    <td class="north" rowspan="2">North America</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td class="africa" rowspan="4">Africa</td>
+                    <td class="north" colspan="2">Africa</td>
+                    <td class="empty"></td>
+                    <td class="asia" colspan="2"></td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td class="asia" rowspan="2" colspan="3">Asia</td>
+                    <td class="north">North America</td>
+                    <td class="south" rowspan="2" colspan="2"> South America</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td class="south" colspan="5">South America</td>
+                    <td class="image">No Seminar</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td class="south" rowspan="2">South America</td>
+                    <td class="empty"></td>
+                    <td class="north">North America</td>
+                    <td class="africa" rowspan="2">Africa</td>
+                    <td class="south" rowspan="2">South America</td>
+                    <td class="asia" rowspan="2" colspan="2">Asia</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td class="africa">Africa</td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <th>Holidays</th>
+                    <td class="image" colspan="7">No Seminar</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <span>Schedule is subject to change.</span>
+    <hr>
+    <footer>
+        <img src="images/outdooradventurehorizontal.png" alt="footerImage">
+    </footer>
+</body>
+
+</html>

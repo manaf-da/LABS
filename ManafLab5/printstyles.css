@@ -1,0 +1,15 @@
+
+    body {
+        color: black;
+    }
+   table, th, td {
+        border: none !important
+    }
+
+ caption {
+        text-align: center !important;
+    }
+
+    nav ,hr, footer{
+        display: none;
+    }

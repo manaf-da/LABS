@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Seminars</title>
+    <!-- CO710 Statement of Authorship
+I Manaf Dawud , 000955625 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else.
+Date: 2024-12-01
+General Description: Build a webpage  using forms.
+-->
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <link rel="stylesheet" type="text/css" href="travelstyles.css">
+    <link rel="stylesheet" type="text/css" href="printstyles.css" media="print">
+    <style>
+        .container {
+            width: 70%;
+        }
+
+        fieldset {
+            padding: 10px;
+        }
+
+        .reviewOptions {
+            margin-bottom: 10px;
+        }
+
+        .rating label {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            display: block;
+            margin-left: 10px;
+        }
+
+        .other label {
+            display: block;
+        }
+
+        .tripArea label {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .other {
+            display: inline-flex;
+            gap: 5px;
+        }
+
+        select {
+            width: 10%;
+            outline: none;
+        }
+
+        .aboutYou label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .aboutYou input {
+            padding: 5px;
+            outline: none;
+            background-color: #B6D4CE;
+            border: none;
+        }
+
+        button {
+            background-color: #B6D4CE;
+            padding: 5px 20px;
+            text-align: center;
+            margin-top: 10px;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Travel Reviews </h1>
+        <h2>2024/2025</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">ABout Us</a> </li>
+            <li><a href="#">Countries</a> </li>
+            <li><a href="#">Seminars</a></li>
+            <li><a href="#">Photos</a> </li>
+            <li><a href="#">Travel</a> </li>
+        </ul>
+    </nav>
+    <fieldset class="container">
+        <form action="">
+            <fieldset>
+                <legend>Travel Reviews</legend>
+                <div class="reviewOptions">
+                    <select name="countries" id="countries">
+                        <option value="NorthAmerica" selected>North America</option>
+                        <option value="southAmerica">South America</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                    </select>
+                    <select name="days" id="days">
+                        <option value="7days" selected>7 Days</option>
+                        <option value="10days">10 Days </option>
+                        <option value="14days">14 Days</option>
+                        <option value="21days">21 Days</option>
+                    </select>
+                </div>
+                <p>Your ratings:</p>
+                <div class="rating">
+                    <div class="stars">
+                          <input type="radio" value="1" checked>
+                          <label for="html"><img src="images/5star.png" alt="fiveStar"></label><br>
+                    </div>
+                    <div class="stars">
+                          <input type="radio" value="2">
+                          <label for="html"><img src="images/4star.png" alt="fiveStar"></label><br>
+                    </div>
+                    <div class="stars" value="3">
+                          <input type="radio">
+                          <label for="html"><img src="images/3star.png" alt="fiveStar"></label><br>
+                    </div>
+                    <div class="stars" value="4">
+                          <input type="radio">
+                          <label for="html"><img src="images/2star.png" alt="fiveStar"></label><br>
+                    </div>
+                    <div class="stars" value="5">
+                          <input type="radio">
+                          <label for="html"><img src="images/1star.png" alt="fiveStar"></label><br>
+                    </div>
+                    <div class="comments">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="7" cols="50"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>I would be interested trips to these area: (check all that apply)</legend>
+                <div class="tripArea">
+                    <div>
+                        <input type="checkbox" id="africa" name="africa" value="country">
+                        <label for="africa"> Africa</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="asia" name="asia" value="country2">
+                        <label for="asia"> Africa</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="northAmerica" name="northAmerica" value="country3">
+                        <label for="northAmerica"> North America</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="southAmerica" name="southAmerica" value="country4" checked>
+                        <label for="southAmerica"> South America</label><br>
+                    </div>
+                    <div class="other">
+                        <input type="checkbox" id="other" name="other" value="country5">
+                        <label for="other"> Other</label><br>
+                        <div>
+                            <label for="specify">(Please specify)</label>
+                            <input type="text" id="specify" name="specify">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>About You (optional)</legend>
+                <div class="aboutYou">
+                    <div>
+                        <label for="prefer">I usually prefer these types of trips (select all that apply):</label>
+                        <select name="prefer" id="cars" multiple>
+                            <option value="cruise">Cruise</option>
+                            <option value="cultural">Cultural/Historic</option>
+                            <option value="cycling">Cycling</option>
+                            <option value="hiking">Hiking</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Firstname">
+                    </div>
+                    <div> <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Lastname">
+                    </div>
+                    <div>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com.">
+                    </div>
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit" value="Submit">SEND FEEDBACK</button>
+                <button type="reset" value="Reset">CANCEL</button>
+            </div>
+        </form>
+    </fieldset>
+    <hr>
+    <footer>
+        <img src="images/outdooradventurehorizontal.png" alt="footerImage">
+    </footer>
+</body>
+
+</html>
